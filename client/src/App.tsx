@@ -12,18 +12,16 @@ function App() {
   }, [])
 
   return (
-    <>
-      <Fragment>
-        <Typography variant="h3">Reactivities</Typography>
-        <List>
-          {activities.map((activity) => (
-            <ListItem key={activity.id}>
-              <ListItemText>{activity.title}</ListItemText>
-            </ListItem>
-          ))}
-        </List>
-      </Fragment>
-    </>
+    <Fragment>
+      <Typography variant="h3">Reactivities</Typography>
+      <List>
+        {activities.map((activity) => (
+          <ListItem key={activity.id}>
+            <ListItemText>{activity.title}</ListItemText>
+          </ListItem>
+        ))}
+      </List>
+    </Fragment>
   )
 }
 
